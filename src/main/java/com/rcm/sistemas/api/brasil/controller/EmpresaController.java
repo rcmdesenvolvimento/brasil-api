@@ -18,7 +18,7 @@ public class EmpresaController {
 	private EmpresaService empresaService;
 
 	@GetMapping("/{cnpj}")
-	public ResponseEntity<Empresa> getCbpj(@PathVariable String cnpj) {
+	public ResponseEntity<Empresa> getCNPJ(@PathVariable String cnpj) {
 
 		Empresa empresa = empresaService.buscaEmpresa(cnpj);
 
